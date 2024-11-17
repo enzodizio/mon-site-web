@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>Cours HTML de zero</title>
+    <!-- icone de l'oglet -->
+    <link rel="shortcut icon" href="logo head.jpg" />
+  </head>
+  <body>
+    <nav>
+      <!-- UL = Unordered List -->
+      <ul>
+        <li>Accueil</li>
+        <li>Boutique</li>
+        <li><a href="#form">Formulaire</a>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <!-- un seul H! par page  -->
+      <h1>Ceci est le titre principal</h1>
+      <p>
+        Texte classque <em>Tete en italique ?</em><strong>Texte en gras</strong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        numquam voluptatem voluptatum quasi in itaque, sapiente similique autem
+        illo qui dolorem nam odit accusantium facilis eos cupiditate,
+      </p>
+    </header>
+
+    <main>
+     <section>
+      <h2>Ordered List</h2>
+      <ol>
+        <li>Ceci est Une</li>
+        <li>list dans</li>
+        <li>l'ordre</li>
+        <ol>
+        </section>
+
+
+
+      <section>
+        <h3>Image en HTML</h3>
+        <img src="./image.jpg"height="200" alt="image-section">
+        <!-- L'ALT de l'image est pour l'accessibilité -->
+
+        <div>
+          <h4>Tableu</h4>
+          <table border="4" cellpadding="10" cellspacing="4" style="texte-align: center">
+            <!-- thead est pour l'entete du tableau -->
+          <thead>
+            <tr>
+              <th>col 1
+              <th>col 2
+              <th>col 3
+                <TR>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">cell 1</td>
+              <td>col 2</td>
+              <td>col 3</td>
+            </tr>
+            <tr>
+              <td colspan="2">cell 4</td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <h5>&#8594; les liens</h5>
+        <a href="https://htmlcheatsheet.com" target="_black">HTML Cheat Sheet</a>
+      </div>
+          <div>
+         <h6>&#128190; Video</h6> 
+         <video src="./video clavier.mp4" height="400"  autoplay muted loop></video>
+          </div>
+          </section>
+          <section id="form">
+            <h2>Les formulaires</h2>
+            <form action="">
+              <!-- for est id permettentde lier le label a limput -->
+              <label for="name">Nom</label>
+              <input type="text" id="name" placeholder="Entrer votre nom" />
+             
+              <br>
+              
+              <label for="age">Entrer votre age</label>
+              <input type="number" id="age" value="18" />
+              <!-- input de type select -->
+             
+              <br>
+             
+              <label for="Gender">Genre</label>
+              <select id="Gender">
+                <option value="Homme">Homme</option>
+                <option selected="selected" value="Femme">Femme</option>
+
+                <option value="Autre">Autre</option>
+              </select>
+                
+              
+              <!-- imput de type radio -->
+               <div>
+                <input type="radio" name="type" id="human" checked>
+                <label for="human">Humain</label>
+              
+                <input type="radio" name="type" id="dog">
+                <label for="dog">chiem</label>
+                
+                <input type="radio" name="type" id="cat">
+                <label for="cat">chat</label>
+               </div>
+               
+               <textarea placeholder="Votre message..." cols="20" rows="5"></textarea>
+
+               <br>
+               <!-- imput de check box -->
+                <input type="checkbox" name="" id="cgv">
+              <label for="cgv">Accepter les condition génerél</label>
+              
+              <br>
+              <input type="submit" value="ceci est le bouton pour valider le frmulaire">
+           </form>
+            <button>ceci est un bouton</button>
+          </section>
+    </main>
+
+    <!-- mail et envoi de fichiers -->
+  <footer>
+    <a href="mailto:enzodizio59@gmail.com">Contacter moi</a>
+
+    <br>
+    
+    <a href="./notice" download="Notice">Telecharger la notice</a>
+  </footer>
+  </body>
+</html>
